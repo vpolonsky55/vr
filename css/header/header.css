@@ -1,0 +1,54 @@
+.header {
+    padding-top: 329px;
+    text-align: center;
+}
+.header__title {
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 100%;
+}
+.header__description {
+    max-width: 850px;
+    margin: 120px auto;
+}
+.header__img{
+    width: 100%;
+}
+.header__graphics {
+    position: relative;
+}
+.header__angular1 {
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    right: 0;
+    background: conic-gradient(from 180deg at 50% 50%, #0DC5FF 0deg, #2B416B 360deg);
+  }
+  .header__angular2{
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    position:absolute;
+    top:0;
+    right: 0;
+    background: conic-gradient(from 57.12deg at 50% 50%, #00FFD1 0deg, rgba(0, 255, 209, 0) 360deg);
+    animation: rotatiton 60s linear 0s infinite;
+  }
+@keyframes rotatiton{
+    0%{
+      transform:rotate(0deg)
+    }
+    100%{
+      transform:rotate(360deg)
+    }
+  }
+.form-control {
+    margin-bottom: 30px;
+}
+.form__btn {
+    display: block;
+    margin: 0 auto;
+}
+

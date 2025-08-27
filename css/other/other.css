@@ -1,0 +1,47 @@
+.other__container{
+    height: 100vh;
+    background: url("img/other-bg.png") left/contain no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.other__cards {
+    list-style: none;
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.other__cards li{
+    width: calc(50% - 20px);
+    background: var(--card-color);
+    color: var(--font-color2);
+    padding: 25px;
+    position: relative;
+}
+.other__card-title {
+    font-size: 2rem;
+    font-weight: 900;
+}
+ 
+.other__card-text {
+    font-size: 1rem;
+}
+.other__cards li:nth-of-type(2n+1){
+    margin-right: 40px;
+}
+.other__cards li:nth-of-type(1), .other__cards li:nth-of-type(2){
+    margin-bottom: 40px;
+}
+.other__cards li:hover::before{
+    content: 'Временно недоступен';
+    background: url('img/other-unavalible-icon.svg') right 22px center/ 36px no-repeat,
+    var(--font-color2);
+    padding: 30px 22px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(35px, 20px);
+    color: var(--font-color1);
+    padding-right: 78px;
+}

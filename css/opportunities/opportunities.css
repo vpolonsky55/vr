@@ -1,0 +1,90 @@
+.opportunities__title {
+    width: 320px;
+    margin-bottom: 60px;
+}
+.opportunities__body {
+    display: flex;
+}
+.opportunities__buttons {
+    display: flex;
+    flex-direction: column;
+}
+.opportunities__buttons label{
+    height: 25%;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opportunities__images {
+    height: 750px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.opportunities__togglerFit:checked ~ .opportunities__buttons label:nth-of-type(1){
+    color: var(--font-color2);
+    background: var(--card-color);
+}
+.opportunities__togglerWork:checked ~ .opportunities__buttons label:nth-of-type(2){
+    color: var(--font-color2);
+    background: var(--card-color);
+}
+.opportunities__togglerFun:checked ~ .opportunities__buttons label:nth-of-type(3){
+    color: var(--font-color2);
+    background: var(--card-color);
+}
+.opportunities__togglerEd:checked ~ .opportunities__buttons label:nth-of-type(4){
+    color: var(--font-color2);
+    background: var(--card-color);
+}
+
+.opportunities__images li{
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: var(--font-color2);
+    font-weight: 900;
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+
+.opportunities__togglerFit:checked ~ .opportunities__images li:nth-of-type(1){
+    height: 100%;
+}
+.opportunities__togglerWork:checked ~ .opportunities__images li:nth-of-type(2){
+    height: 100%;
+}
+.opportunities__togglerFun:checked ~ .opportunities__images li:nth-of-type(3){
+    height: 100%;
+}
+.opportunities__togglerEd:checked ~ .opportunities__images li:nth-of-type(4){
+    height: 100%;
+}
+
+.opportunities__images li:nth-of-type(1){
+   background: url("img/opp-img1.png") center/cover no-repeat;
+}
+.opportunities__images li:nth-of-type(2){
+    background: url("img/opp-img2.png") center/cover no-repeat;
+ }
+ .opportunities__images li:nth-of-type(3){
+    background: url("img/opp-img3.png") center/cover no-repeat;
+ }
+ .opportunities__images li:nth-of-type(4){
+    background: url("img/opp-img4.png") center/cover no-repeat;
+ }
+
+.opportunities__body input{
+    position: fixed;
+    opacity: 0;
+}
+.opportunities__images li span{
+    margin: 0 50px 50px 0;
+    width: 50%;
+    text-align: right;
+}

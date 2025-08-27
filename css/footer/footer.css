@@ -1,0 +1,91 @@
+.footer {
+    background: var(--font-color1);
+    color: var(--font-color2);
+}
+.footer h3{
+    font-size: 2rem;
+}
+.footer p, .footer a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--font-color2);
+    font-weight: 900;
+}
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(2, minmax(305px, max-content));
+}
+.footer_quest {
+    grid-area: footqu;
+    display: flex;
+    flex-direction: column;
+}
+.footer_dev {
+    grid-area: footdev;
+    display: flex;
+    flex-direction: column;
+}
+.footer_shop {
+    grid-area: footsh;
+    display: flex;
+    flex-direction: column;
+}
+.footer_social {
+    grid-area: footsoc;
+    display: flex;
+    border-bottom: 1px solid var(--font-color2);
+    align-items: flex-end;
+    padding-bottom: 23px;
+}
+.footer_help {
+    grid-area: footh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+}
+.footer__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(2, minmax(305px, max-content));
+    grid-template-areas: 
+    'footqu footdev footsh footh footh'
+    'footsoc footsoc footsoc footh footh';
+    gap: 20px;
+}
+.footer_quest h3, .footer_dev h3, .footer_shop h3{
+    margin-bottom: 40px;
+}
+.footer_social h3{
+    margin-right: auto;
+}
+.footer_social svg{
+   font-size: 70px;
+   margin-left: 50px;
+}
+.footer_help h3{
+    width: 460px;
+}
+.footer_help p{
+    width: 460px;
+    font-weight: 300;
+}
+.footer_help a{
+    padding: 27px 146px;
+    background: var(--font-color2);
+    color: var(--font-color1);
+}
+.footer_help h3{
+    width: 460px;
+}
+.footer_help p{
+    width: 460px;
+    font-weight: 300;
+}
+.footer_help a{
+    padding: 27px 146px;
+    background: var(--font-color2);
+    color: var(--font-color1);
+}

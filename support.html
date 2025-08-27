@@ -1,0 +1,46 @@
+<!-- СТРАНИЦА ДЛЯ ДЗ 1 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма поддержки и обратной связи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="support-form container">
+        <h2>Связь с поддержкой</h2>
+        <hr>
+        <form action="#" class="support-form__container">
+            <div>
+                <label for="mailInput">Имя</label>
+                <input type="text" name="name" id="nameInput" class="form-control" placeholder="Андрей">
+            </div>
+            <div>
+                <label for="adressInput">Адрес</label>
+                <input type="text" name="email" id="emailInput" class="form-control" placeholder="samplemail@mail.com">
+            </div>
+            <div>
+                <label for="ask-category">Выберете тему</label>
+                <select class="form-select" id="ask-category">
+                    <option selected value="p1">Проблема со шлемом</option>
+                    <option value="p2">Проблема с доставкой</option>
+                    <option value="p3">Проблема в эксплуатации</option>
+                    <option value="p4">Рекомендации по обслуживанию</option>
+                    <option value="p5">Общие вопросы</option>
+                    <option value="p6">Жалобы и предложения</option>
+                  </select>
+            </div>
+            <div>
+                <label for="ask-comment">Страна доставки</label>
+                <textarea name="comment" id="ask-comment" class="form-control" placeholder="Комментарий"></textarea>
+            </div>
+            <button class="support__button btn btn-primary">Отправить в поддержку</button>
+        </form>
+    </div>
+</body>
+</html>

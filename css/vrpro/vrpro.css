@@ -1,0 +1,71 @@
+.vrpro-body {
+    background: #2B2A32;
+    color: var(--font-color2);
+}
+
+.vrpro-body__grid {
+    width: 100%;
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 619px);
+    gap: 20px;
+    grid-template-areas:
+    'vrl-t vrl-t'
+    'vrl-h vrl-h'
+    'vrl-i vrl-i'
+    'vrl-tech .'
+    'vrl-tech vrl-b'
+    ;
+}
+.vrpro-body__grid h3{
+    margin-bottom: 42px;
+}
+
+.vrpro-body_title {
+    grid-area: vrl-t;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.vrpro-body_title h1{
+    width: 20%;
+    padding-bottom: 54px;
+    border-bottom: 1px solid var(--font-color2);
+    align-self: center;
+}
+.vrpro-body_hardware {
+    grid-area: vrl-h;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.vrpro-body_input {
+    grid-area: vrl-i;
+     display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+.vrpro-body_hardware div, .vrpro-body_input div{
+    align-self: center;
+}
+
+.vrpro-body_technical {
+    grid-area: vrl-tech;
+    background-color: var(--font-color2);
+    padding: 55px 42px;
+    color: var(--font-color1);
+}
+.vrpro-body_buy {
+    grid-area: vrl-b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: var(--grad2);
+    padding: 55px 42px;
+    color: var(--font-color2);
+}
+.vrpro-body_buy a{
+    padding: 32px 100px;
+    font-size: 2rem;
+}
